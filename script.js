@@ -1,0 +1,2 @@
+const nav=document.querySelector('.nav');const menu=document.querySelector('.menu');if(menu){menu.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
+const form=document.querySelector('.form');if(form){form.addEventListener('submit',e=>{e.preventDefault();alert('Thank you! Your message has been recorded for this demo website.');form.reset()})}

@@ -1,0 +1,22 @@
+Bharath GreenFields image notes
+
+Your profile photo:
+- assets/profile.jpg (provided in the reference website)
+
+Real-world agriculture photographs used in the website are loaded from Wikimedia Commons. Their original source pages and licenses should be checked before public/commercial redistribution:
+- https://commons.wikimedia.org/wiki/File:Rice_Paddy_Field.jpg
+- https://commons.wikimedia.org/wiki/File:Wheat_Field_in_India.jpg
+- https://commons.wikimedia.org/wiki/File:Maize_Field.jpg
+- https://commons.wikimedia.org/wiki/File:Cottonfieldindia.jpg
+- https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg
+- https://commons.wikimedia.org/wiki/File:Groundnut-crop.jpg
+- https://commons.wikimedia.org/wiki/File:Agricultural_drone_spraying_on_paddy_field.jpg
+- https://commons.wikimedia.org/wiki/File:SOLAR_POWER_IRRIGATION_RICE_FARMING.jpg
+- https://commons.wikimedia.org/wiki/File:Automated_Greenhouse_System.jpg
+- https://commons.wikimedia.org/wiki/File:Soil_moisture_sensor.JPG
+- https://commons.wikimedia.org/wiki/File:Claas_Baseline_HD.jpg
+- https://commons.wikimedia.org/wiki/File:Weather_Station_USDA.jpg
+
+Note: these photographs are referenced from their original Wikimedia URLs so the website needs an internet connection for them to load.
+
+Additional crop photographs: Wikimedia Commons — soybean, pigeon pea, chilli, tomato, banana plantation, and turmeric farm. See the individual Commons file pages for attribution/licensing.

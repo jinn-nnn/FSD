@@ -1,0 +1,145 @@
+
+/* Professional 3D enhancement layer */
+:root{
+  --glass: rgba(255,255,255,.10);
+  --glass-border: rgba(255,255,255,.20);
+  --shadow3d: 0 24px 60px rgba(0,0,0,.22);
+  --accent: #00d4ff;
+}
+body{perspective:1200px;}
+.navbar, nav, header{
+  position:relative; z-index:1000;
+}
+.card, .teacher-card, .faculty-card, .feature-card, .service-card, .crop-card,
+.vehicle-card, .gallery-item, .box, .content-card, .course-card, .stat-card{
+  transform-style:preserve-3d;
+  transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  will-change:transform;
+}
+.card:hover, .teacher-card:hover, .faculty-card:hover, .feature-card:hover,
+.service-card:hover, .crop-card:hover, .vehicle-card:hover, .gallery-item:hover,
+.box:hover, .content-card:hover, .course-card:hover, .stat-card:hover{
+  transform:translateY(-8px) rotateX(2deg) rotateY(-2deg);
+  box-shadow:var(--shadow3d);
+}
+img{transition:transform .45s ease, filter .45s ease;}
+.card:hover img, .teacher-card:hover img, .faculty-card:hover img,
+.crop-card:hover img, .vehicle-card:hover img, .gallery-item:hover img{
+  transform:scale(1.035);
+}
+.glass-panel{
+  background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.05));
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--shadow3d);
+  border-radius:20px;
+}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.popup-overlay{
+  position:fixed;inset:0;background:rgba(4,10,25,.72);backdrop-filter:blur(7px);
+  display:flex;align-items:center;justify-content:center;z-index:9999;
+  opacity:0;visibility:hidden;transition:.3s ease;padding:20px;
+}
+.popup-overlay.active{opacity:1;visibility:visible;}
+.popup-box{
+  width:min(560px,100%);background:linear-gradient(145deg,#fff,#edf7ff);
+  color:#132033;border-radius:24px;padding:30px;position:relative;
+  box-shadow:0 35px 100px rgba(0,0,0,.35);
+  transform:translateY(25px) scale(.94);transition:.35s ease;
+}
+.popup-overlay.active .popup-box{transform:none;}
+.popup-close{
+  position:absolute;right:16px;top:12px;width:38px;height:38px;border:0;border-radius:50%;
+  background:#132033;color:#fff;font-size:22px;cursor:pointer;
+}
+.popup-box h2{margin-top:0;font-size:28px;}
+.popup-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
+.popup-actions button,.popup-actions a{
+  border:0;border-radius:12px;padding:12px 18px;cursor:pointer;text-decoration:none;
+}
+#backToTop{
+  position:fixed;right:22px;bottom:22px;width:48px;height:48px;border:0;border-radius:50%;
+  background:#132033;color:#fff;z-index:3000;cursor:pointer;opacity:0;pointer-events:none;
+  transition:.25s;box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+#backToTop.show{opacity:1;pointer-events:auto;}
+#welcomeToast{
+  position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);
+  background:#132033;color:#fff;padding:13px 18px;border-radius:14px;z-index:9998;
+  opacity:0;pointer-events:none;transition:.35s;box-shadow:0 14px 35px rgba(0,0,0,.25);
+}
+#welcomeToast.show{opacity:1;transform:translate(-50%,0);}
+@media(max-width:700px){
+  .popup-box{padding:24px}
+}
+
+/* Final professional polish */
+:root{
+  --green:#0b6b38;
+  --dark:#07351d;
+  --lime:#9acb54;
+  --gold:#d9a52e;
+  --cream:#f4f7f1;
+  --ink:#15281c;
+  --muted:#66746a;
+  --shadow:0 18px 50px rgba(6,45,24,.10);
+}
+body{background:#fbfcfa;overflow-x:hidden}
+.navwrap{border-bottom:1px solid rgba(7,53,29,.07)}
+.brand{transition:transform .25s ease}
+.brand:hover{transform:translateY(-1px)}
+.links a{transition:color .2s ease,border-color .2s ease}
+.hero{position:relative;isolation:isolate;background-position:center}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 78% 45%,rgba(154,203,84,.22),transparent 28%)}
+.hero h1{letter-spacing:-2.5px;text-shadow:0 8px 30px rgba(0,0,0,.18)}
+.hero p{line-height:1.75}
+.hero .btn{box-shadow:0 12px 25px rgba(0,0,0,.15);transition:transform .25s ease,box-shadow .25s ease}
+.hero .btn:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(0,0,0,.22)}
+.stats{gap:12px}
+.stat{border-radius:14px;backdrop-filter:blur(10px);transition:transform .25s ease,background .25s ease}
+.stat:hover{transform:translateY(-4px);background:rgba(255,255,255,.18)}
+.section{position:relative}
+.section-head h2{letter-spacing:-1px}
+.card{border:1px solid rgba(7,53,29,.06);transition:transform .35s ease,box-shadow .35s ease}
+.card-body{background:linear-gradient(180deg,#fff,#fbfdfb)}
+.card h3{letter-spacing:-.3px}
+.card img{filter:saturate(.96)}
+.card:hover{box-shadow:0 25px 60px rgba(7,53,29,.16)}
+.page-hero{position:relative;overflow:hidden}
+.page-hero:after{content:"";position:absolute;width:360px;height:360px;right:-120px;top:-170px;border-radius:50%;background:rgba(154,203,84,.16);filter:blur(2px)}
+.page-hero .container{position:relative;z-index:1}
+.page-hero h1{letter-spacing:-1.5px}
+.gallery figure{box-shadow:0 15px 40px rgba(6,45,24,.12);transition:transform .35s ease,box-shadow .35s ease}
+.gallery figure:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(6,45,24,.20)}
+.contact-box,.formbox{border:1px solid rgba(7,53,29,.07)}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(11,107,56,.09)}
+.footer{position:relative}
+.scroll-progress{position:fixed;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--lime),var(--gold));z-index:10000;box-shadow:0 0 12px rgba(154,203,84,.45)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){
+  .navwrap{position:sticky}
+  .nav.open .links{box-shadow:0 18px 35px rgba(0,0,0,.10);border-top:1px solid #edf1ed}
+}
+
+/* Enhanced crop photography */
+.cards .card { overflow: hidden; }
+.cards .card > img {
+  width: 100%;
+  height: 270px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: auto;
+  background: #e8efe8;
+  transition: transform .55s ease, filter .55s ease;
+}
+.cards .card:hover > img {
+  transform: scale(1.045);
+  filter: saturate(1.08) contrast(1.04);
+}
+@media (max-width: 700px) {
+  .cards .card > img { height: 230px; }
+}
